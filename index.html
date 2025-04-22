@@ -58,6 +58,7 @@
     .section:nth-of-type(2) { animation-delay: 0.3s; }
     .section:nth-of-type(3) { animation-delay: 0.6s; }
     .section:nth-of-type(4) { animation-delay: 0.9s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
     @keyframes fadeUp {
       to {
         opacity: 1;
@@ -70,13 +71,13 @@
       gap: 20px;
       padding: 20px;
     }
-    video {
+    video, iframe {
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,200,255,0.2);
       transition: transform 0.3s ease;
     }
-    video:hover {
+    video:hover, iframe:hover {
       transform: scale(1.03);
     }
     .footer {
@@ -94,6 +95,7 @@
     <h1>@enrgy081993</h1>
     <nav>
       <a href="#about">Über mich</a>
+      <a href="#live">Live</a>
       <a href="#clips">Clips</a>
       <a href="#schedule">Zeitplan</a>
       <a href="#contact">Kontakt</a>
@@ -103,6 +105,18 @@
   <section class="section" id="about">
     <h2>Über mich</h2>
     <p>Willkommen auf der offiziellen Seite von @enrgy081993! Ich zocke leidenschaftlich Games wie Tarkov, Apex, League und mehr – mit Skill, Humor und Community-Vibes. Sei live dabei und verpasse keinen epischen Moment!</p>
+  </section>
+
+  <section class="section" id="live">
+    <h2>Live-Stream</h2>
+    <p>Wenn ich gerade streame, kannst du hier direkt live zuschauen!</p>
+    <div class="clips">
+      <iframe
+        src="https://player.twitch.tv/?channel=enrgy081993&parent=example.com"
+        height="480"
+        allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
   <section class="section" id="clips">
@@ -136,8 +150,5 @@
   <footer class="footer">
     © 2025 enrgy081993 – Powered by Gaming & Leidenschaft
   </footer>
-</body>
-</html>
-
 </body>
 </html>
